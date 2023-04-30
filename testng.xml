@@ -15,6 +15,7 @@
                     <include name="Comment"/>
                     <include name="closeButton"/>
                     <include name="more"/>
+                    <include name="close"/>
                 </methods>
             </class>
         </classes>

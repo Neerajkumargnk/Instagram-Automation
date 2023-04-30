@@ -92,7 +92,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">10 methods,   10 passed</span>
+                    <span class="method-stats">11 methods,   11 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -129,6 +129,11 @@
                       <span>
                         <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Surefire_suite" title="org.example.AppTest" class="method navigator-link" hash-for-method="SearchButton">SearchButton</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="org.example.AppTest" class="method navigator-link" hash-for-method="close">close</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -213,6 +218,13 @@
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
+                  <a name="close">
+                  </a> <!-- close -->
+                  <span class="method-name">close</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
                   <a name="closeButton">
                   </a> <!-- closeButton -->
                   <span class="method-name">closeButton</span>
@@ -292,27 +304,27 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(10);
+data.addRows(11);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'LoginVerification')
 data.setCell(0, 2, 'org.example.AppTest')
-data.setCell(0, 3, 17433);
+data.setCell(0, 3, 19908);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'SearchButton')
 data.setCell(1, 2, 'org.example.AppTest')
-data.setCell(1, 3, 16701);
+data.setCell(1, 3, 16744);
 data.setCell(2, 0, 2)
 data.setCell(2, 1, 'MessageButton')
 data.setCell(2, 2, 'org.example.AppTest')
-data.setCell(2, 3, 12316);
+data.setCell(2, 3, 12372);
 data.setCell(3, 0, 3)
 data.setCell(3, 1, 'InfoButton')
 data.setCell(3, 2, 'org.example.AppTest')
-data.setCell(3, 3, 11028);
+data.setCell(3, 3, 8265);
 data.setCell(4, 0, 4)
 data.setCell(4, 1, 'Comment')
 data.setCell(4, 2, 'org.example.AppTest')
-data.setCell(4, 3, 7440);
+data.setCell(4, 3, 7429);
 data.setCell(5, 0, 5)
 data.setCell(5, 1, 'postButton')
 data.setCell(5, 2, 'org.example.AppTest')
@@ -320,19 +332,23 @@ data.setCell(5, 3, 5485);
 data.setCell(6, 0, 6)
 data.setCell(6, 1, 'ExploreButton')
 data.setCell(6, 2, 'org.example.AppTest')
-data.setCell(6, 3, 5227);
+data.setCell(6, 3, 5276);
 data.setCell(7, 0, 7)
 data.setCell(7, 1, 'likComm')
 data.setCell(7, 2, 'org.example.AppTest')
-data.setCell(7, 3, 2234);
+data.setCell(7, 3, 2252);
 data.setCell(8, 0, 8)
 data.setCell(8, 1, 'more')
 data.setCell(8, 2, 'org.example.AppTest')
-data.setCell(8, 3, 1333);
+data.setCell(8, 3, 1344);
 data.setCell(9, 0, 9)
-data.setCell(9, 1, 'closeButton')
+data.setCell(9, 1, 'close')
 data.setCell(9, 2, 'org.example.AppTest')
-data.setCell(9, 3, 215);
+data.setCell(9, 3, 358);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'closeButton')
+data.setCell(10, 2, 'org.example.AppTest')
+data.setCell(10, 3, 170);
 window.suiteTableData['Surefire_suite']= { tableData: data, tableDiv: 'times-div-Surefire_suite'}
 return data;
 }
@@ -370,39 +386,43 @@ return data;
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">InfoButton</span>
-                <span class="method-start">17439 ms</span>
+                <span class="method-start">19911 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">ExploreButton</span>
-                <span class="method-start">28468 ms</span>
+                <span class="method-start">28177 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">SearchButton</span>
-                <span class="method-start">33695 ms</span>
+                <span class="method-start">33453 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">MessageButton</span>
-                <span class="method-start">50397 ms</span>
+                <span class="method-start">50197 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">postButton</span>
-                <span class="method-start">62713 ms</span>
+                <span class="method-start">62569 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">likComm</span>
-                <span class="method-start">68199 ms</span>
+                <span class="method-start">68055 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">Comment</span>
-                <span class="method-start">70434 ms</span>
+                <span class="method-start">70308 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">closeButton</span>
-                <span class="method-start">77875 ms</span>
+                <span class="method-start">77737 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">more</span>
-                <span class="method-start">78091 ms</span>
+                <span class="method-start">77908 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">close</span>
+                <span class="method-start">79253 ms</span>
               </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

@@ -13,7 +13,7 @@ public class AppTest {
     public void LoginVerification() throws InterruptedException {
         LoginPage login = PageFactory.initElements(driver, LoginPage.class);
         //UI-1
-        //login.loginWebsite("Hari_jjjk", "e5612323");
+        login.loginWebsite("Hari_jjjk", "e5612323");
         //UI-2
         login.loginWebsiteagain("Hari_Epam", "epam123");
     }
@@ -75,5 +75,9 @@ public class AppTest {
         LogOut l1 = PageFactory.initElements(driver,LogOut.class);
         l1.More();
         l1.logout();
+    }
+    @Test(priority = 11)
+    public void close() throws InterruptedException{
+        driver.quit();
     }
 }

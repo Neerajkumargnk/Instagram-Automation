@@ -1,6 +1,7 @@
 
 package org.example;
 
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -20,27 +21,30 @@ public class LoginPage {
         this.driver = driver;
     }
 
-//    public void loginWebsite(String username, String password) throws InterruptedException {
-//        uname.sendKeys(username);
-//        uname.click();
-//        Thread.sleep(2000);
-//        pname.sendKeys(password);
-//        pname.click();
-//        Thread.sleep(2000);
-//        loginButton.click();
-//        loginButton.click();
-//        Thread.sleep(2000);
-//        uname.clear();
-//        Thread.sleep(1000);
-//        pname.clear();
-//        Thread.sleep(1000);
-//    }
+    public void loginWebsite(String username, String password) throws InterruptedException {
+        uname.sendKeys(username);
+        uname.click();
+        Thread.sleep(2000);
+        pname.sendKeys(password);
+        pname.click();
+        Thread.sleep(2000);
+        loginButton.click();
+        Thread.sleep(3000);
+        String ue = Keys.chord(Keys.CONTROL, "a");
+        uname.sendKeys(ue);
+        uname.sendKeys(Keys.DELETE);
+        Thread.sleep(1000);
+        String up = Keys.chord(Keys.CONTROL, "a");
+        pname.sendKeys(up);
+        pname.sendKeys(Keys.DELETE);
+        Thread.sleep(1000);
+
+
+    }
 
     public void loginWebsiteagain(String username, String password) throws InterruptedException {
-        uname.clear();
         uname.sendKeys(username);
         Thread.sleep(2000);
-        pname.clear();
         pname.sendKeys(password);
         Thread.sleep(2000);
         loginButton.click();
